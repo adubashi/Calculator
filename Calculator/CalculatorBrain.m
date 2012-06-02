@@ -71,18 +71,15 @@ static NSDictionary *OPERAND_COUNTS;
 	[self.programStack removeLastObject];
 }
 
-+ (BOOL)isNoOperandOperation:(NSString *)operation {
-	
++ (BOOL)isNoOperandOperation:(NSString *)operation {	
 	return [[self operandCounts] objectForKey:operation] == [NSNumber numberWithInt:0];
 }
 
-+ (BOOL)isOneOperandOperation:(NSString *)operation {
-	
++ (BOOL)isOneOperandOperation:(NSString *)operation {	
 	return [[self operandCounts] objectForKey:operation] == [NSNumber numberWithInt:1];
 }
 
-+ (BOOL)isTwoOperandOperation:(NSString *)operation {
-	
++ (BOOL)isTwoOperandOperation:(NSString *)operation {	
 	return [[self operandCounts] objectForKey:operation] == [NSNumber numberWithInt:2];
 }
 

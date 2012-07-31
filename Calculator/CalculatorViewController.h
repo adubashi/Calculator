@@ -22,4 +22,5 @@
 @property (weak, nonatomic) id<MasterViewControllerPopoverDelegate> popoverDelegate;
 
 
+
 @end
